@@ -1,0 +1,92 @@
+package com.aish;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+	// hollow rectangle Q1
+        Scanner sc=new Scanner(System.in);
+        int n= sc.nextInt();
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=n;j++){
+              if (i==n||i==1||j==1||j==n){
+                  System.out.print("*");
+              }
+              else{
+                  System.out.print(" ");
+              }
+            }
+            System.out.println();}
+            //triangle Q2
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for (int j=i;j>=1;j--){
+                System.out.print("*");
+            }
+            for (int j=2;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=n;j++){
+                if (i==3||j==3){
+                    System.out.print("*");
+                }
+                else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }//triangle with _ Q3
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for (int j=i;j>=1;j--){
+                if ((i+j)%2==0){
+                    System.out.print("*");
+                }
+                else {
+                    System.out.print("_");
+                }
+            }
+            for (int j=2;j<=i;j++){
+               if ((i+j)%2==0){
+                   System.out.print("*");
+               }
+               else{
+                   System.out.print("_");
+               }
+            }
+            System.out.println();
+        }
+        //Q4
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for (int j=i;j>=1;j--){
+              if (i==1||j==i){
+                  System.out.print("*");
+              }
+              else {
+                  System.out.print("_");
+              }}
+            for (int j=2;j<=i;j++) {
+                if (i==1||j==i){
+                    System.out.print("*");
+                }
+                else {
+                    System.out.print("_");
+                }
+            }
+                System.out.println();
+            }
+
+        }
+
+
+
+    }
+
